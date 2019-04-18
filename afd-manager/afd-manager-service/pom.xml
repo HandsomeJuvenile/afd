@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.afd.manager</groupId>
+		<artifactId>afd-manager</artifactId>
+		<version>v-1.0</version>
+	</parent>
+	<groupId>com.afd.manager.service</groupId>
+	<artifactId>afd-manager-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>afd-manager-service</name>
+	<description>afd-manager-service</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<dubbo.version>2.6.0</dubbo.version>
+		<zkclient.version>0.10</zkclient.version>
+		<zookeeper.version>3.4.8</zookeeper.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.afd.manager.api</groupId>
+			<artifactId>afd-manager-api</artifactId>
+			<version>v-1.0</version>
+		</dependency>
+		<!-- web-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- Dubbo依赖 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbo.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+				<!-- <exclusion>
+                   <groupId>log4j</groupId>
+                   <artifactId>log4j</artifactId>
+                 </exclusion>
+                 <exclusion>
+                   <groupId>commons-logging</groupId>
+                   <artifactId>commons-logging</artifactId>
+                 </exclusion>-->
+				<!--<exclusion>
+                  <groupId>org.jboss.netty</groupId>
+                  <artifactId>netty</artifactId>
+                </exclusion>-->
+			</exclusions>
+		</dependency>
+		<!--zookeeper依赖 -->
+		<!--<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>${zookeeper.version}</version>
+		</dependency>-->
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>${zkclient.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

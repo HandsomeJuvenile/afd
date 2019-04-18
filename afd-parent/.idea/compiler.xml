@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ace-manager-api" />
+        <module name="ace-manager-service" />
+        <module name="afd-common" />
+        <module name="afd-manager-api" />
+        <module name="afd-manager-dao" />
+        <module name="afd-manager-pojo" />
+        <module name="afd-manager-service" />
+        <module name="afd-manager-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ace-manager-api" target="1.8" />
+      <module name="ace-manager-service" target="1.8" />
+      <module name="afd-common" target="1.5" />
+      <module name="afd-manager" target="1.8" />
+      <module name="afd-manager-api" target="1.8" />
+      <module name="afd-manager-dao" target="1.8" />
+      <module name="afd-manager-pojo" target="1.8" />
+      <module name="afd-manager-service" target="1.8" />
+      <module name="afd-manager-web" target="1.8" />
+      <module name="afd-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
